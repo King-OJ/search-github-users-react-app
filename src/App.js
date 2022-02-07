@@ -7,25 +7,25 @@ function App() {
   return (
     <AuthWrapper>
 
-    <Router>
-      <Switch>
-        <PrivateRoute path="/" exact={true}>
-          <Dashboard></Dashboard>
+      <Router>
+        <Switch>
+          <PrivateRoute path="/" exact={true}>
+            <Dashboard></Dashboard>
 
-        </PrivateRoute>
+          </PrivateRoute>
 
-        <Route path="/login">
-          <Login />
+          <Route path="/login">
+            <Login />
 
-        </Route>
+          </Route>
 
-        <Route path="*">
-          <Error />
+          <Route path="*">
+            <Error />
 
-        </Route>
-      
-      </Switch>
-    </Router>
+          </Route>
+        
+        </Switch>
+      </Router>
     </AuthWrapper>
   );
 }
